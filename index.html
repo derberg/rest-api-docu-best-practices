@@ -24,14 +24,157 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h3>Best Practices in REST API Documentation</h3>
+				<section data-background-color="#000">
+					<h4>Best Practices in REST API Documentation</h4>
 					<p>
 						<small>Created by <a href="https://github.com/derberg">Łukasz Górnicki</a> / <a href="http://twitter.com/derberq">@derberq</a></small><br/>
 						<small>Working at <a href="http://hybris.com/en/">SAP Hybris</a></small>
 					</p>
 				</section>
-				<section>Slide 2</section>
+				<section data-background-color="#000">
+					<section data-background-color="#000">
+						<h3>Basics</h3>
+					</section>
+					<section data-background-color="#000">
+						<h5>Terminology</h5>
+						<img src="reqres.png" style="border: 0px solid #fff;">
+					</section>
+					<section data-background-color="#000">
+						<h5>Terminology</h5>
+						<img src="terminology.png" style="border: 0px solid #fff;">
+					</section>
+					<section data-background-color="#000">
+						<h5>Docs Types</h5>
+						<p>
+							<ul>
+								<li class="fragment">Overview</li>
+								<li class="fragment">API Reference</li>
+								<li class="fragment">Events</li>
+								<li class="fragment">Details</li>
+								<li class="fragment">Tutorials</li>
+								<li class="fragment">Security</li>
+								<li class="fragment">...and More</li>
+							</ul>
+						</p>
+					</section>
+					<section data-background-color="#000">
+						<h5>Specifications</h5>
+						<p>
+							<ul>
+								<li class="fragment">RAML</li>
+								<li class="fragment"><a href="https://twitter.com/OpenApiSpec">OpenAPI</a>/Swagger</li>
+								<li class="fragment">API Blueprint</li>
+							</ul>
+						</p>
+						<h5 class="fragment">Why? What? How?</h5>
+					</section>	
+					<section data-background-color="#000">
+						<h5>Style and Rules</h5>
+						<p>
+							<ul>
+								<li class="fragment">Code formatting</li>
+								<li class="fragment">Release notes</li>
+								<li class="fragment">Code language</li>
+								<li class="fragment">Voice and tone</li>
+							</ul>
+						</p>
+						<h5 class="fragment">What else?</h5>
+					</section>		
+					<section data-background-color="#000" style="text-align: left;">
+						<h5><center>Let us work it out together</center></h5>
+						<p>
+							<small style="font-size: 0.5em;">REST API Documentation Guideliness: <a href="https://github.com/YaaS/REST_API_Documentation_Guidelines">https://github.com/YaaS/REST_API_Documentation_Guidelines</a></small>
+							<small style="font-size: 0.5em;">WaaS blog: <a href="https://github.com/YaaS/REST_API_Documentation_Guidelines/wiki">https://github.com/YaaS/REST_API_Documentation_Guidelines/wiki</a></small>
+						</p>
+					</section>																	
+				</section>
+				<section data-background-color="#000">
+					<section data-background-color="#000">
+						<h3>Technology</h3>
+						<h5>cause there is much more than just writing</h5>
+					</section>
+					<section data-background-color="#000">
+						<h3>Play with the API</h3>
+						<h5>Terminal vs User Interface</h5>
+					</section>
+					<section data-background-color="#000">
+						<h3><a href="https://curl.haxx.se">curl</a></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+								curl \
+								-H "Authorization: Bearer {ACCESS_TOKEN}" \
+								https://api.beta.yaas.io/hybris/document/v1/all/statistics \
+								--verbose
+							</code>
+						</pre>
+					</section>
+					<section data-background-color="#000">
+						<h3><a href="https://www.getpostman.com/apps">Postman</a></h3>
+						<div class="postman-run-button"
+data-postman-action="collection/import"
+data-postman-var-1="4238ec24c974d3006668"></div>
+<script type="text/javascript">
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
+					</section>
+					<section data-background-color="#000">
+						<h5>Avoid the "not-invented-here" syndrome</h5>
+					</section>
+					<section data-background-color="#000">
+						<h3>Write API Specification</h3>
+						<img src="swagger.png" style="border: 0px solid #fff;">
+					</section>
+				</section>
+				<section data-background-color="#000">
+						<section data-background-color="#000">
+							<h5>Automation</h5>
+						</section>	
+						<section data-background-color="#000">
+							<h5><a href="https://devportal.yaas.io/services/cart/latest/apiconsole.html">API Consoles</a></h5>
+							<img src="console.png" style="border: 0px solid #fff;">
+						</section>	
+						<section data-background-color="#000">
+							<h5><a href="https://devportal.yaas.io/services/cart/latest/index.html#ApiReference">API Reference</a></h5>
+							<img src="reference.png" style="border: 0px solid #fff;">
+						</section>	
+				</section>
+				<section data-background-color="#161F26">
+						<section data-background-color="#161F26">
+							<h5>The Future</h5>
+						</section>	
+						<section data-background-color="#161F26">
+							<a href="http://graphql.org/">
+								<img src="graphql.png" style="border: 0px solid #fff;">	
+							</a>
+						</section>	
+						<section data-background-color="#161F26">
+							<h5>GitHub is there already</h5>
+							<a href="https://developer.github.com/v4/explorer/">
+								<img src="explorer.png" style="border: 0px solid #fff;">
+							</a>
+						</section>	
+				</section>	
+				<section data-background-color="#000" style="text-align: left;">
+					<h3><center>Thanks!</center></h3>
+					<p>
+						<small style="font-size: 0.5em;">This presentation: <a href="https://derberg.github.io/rest-api-docu-best-practices/">https://derberg.github.io/rest-api-docu-best-practices/</a></small>
+						<small style="font-size: 0.5em;">Static Site Generators: <a href="https://github.com/derberg/awesome-docs-with-static-site-generators">https://github.com/derberg/awesome-docs-with-static-site-generators</a></small> <br>
+						<small style="font-size: 0.5em;">URI vs URL: <a href="https://danielmiessler.com/study/url-uri/">https://danielmiessler.com/study/url-uri/</a></small> <br>
+						<small style="font-size: 0.5em;">GitHub: <a href="https://github.com/derberg">derberg</a></small> <br>
+						<small style="font-size: 0.5em;">Twitter: <a href="http://twitter.com/derberq">@derberq</a></small> <br>
+						<small style="font-size: 0.5em;">reveal.js: <a href="https://github.com/hakimel/reveal.js/">https://github.com/hakimel/reveal.js</a></small> <br>
+					</p>
+				</section>
+				<section data-background-color="#fff">
+					<img src="eval.png" style="width: 70%;">
+				</section>
+				
 			</div>
 		</div>
 
